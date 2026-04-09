@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory - 404 Solved</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="inventory">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="index.html">
+          <div class="brand-mark">404</div>
+          <div class="brand-copy">
+            <span class="brand-overline">Project</span>
+            <h2>404 Solved</h2>
+          </div>
+        </a>
+        <nav class="nav-menu">
+          <a class="nav-link" data-nav="dashboard" href="dashboard.html"><span class="nav-icon">01</span><span>Dashboard</span></a>
+          <a class="nav-link" data-nav="warehouses" href="warehouses.html"><span class="nav-icon">02</span><span>Warehouses</span></a>
+          <a class="nav-link" data-nav="orders" href="orders.html"><span class="nav-icon">03</span><span>Orders</span></a>
+          <a class="nav-link" data-nav="shipments" href="shipments.html"><span class="nav-icon">04</span><span>Shipments</span></a>
+          <a class="nav-link" data-nav="inventory" href="inventory.html"><span class="nav-icon">05</span><span>Inventory</span></a>
+          <a class="nav-link" data-nav="customers" href="customers.html"><span class="nav-icon">06</span><span>Customers</span></a>
+          <a class="nav-link" data-nav="reports" href="reports.html"><span class="nav-icon">07</span><span>Reports</span></a>
+          <a class="nav-link" data-nav="settings" href="settings.html"><span class="nav-icon">08</span><span>Settings</span></a>
+        </nav>
+        <div class="sidebar-footer">
+          <a class="ghost-btn" href="index.html">Back to Home</a>
+        </div>
+      </aside>
+
+      <div class="main-panel">
+        <header class="topbar">
+          <label class="search-box">
+            <span>&#128269;</span>
+            <input type="search" placeholder="Search product name or warehouse allocation" />
+          </label>
+          <div class="topbar-actions">
+            <button class="icon-button" type="button" aria-label="Notifications">
+              <span>&#128276;</span>
+              <span class="icon-badge">6</span>
+            </button>
+            <div class="profile-chip">
+              <div class="profile-avatar">&#128100;</div>
+              <div>
+                <strong>Priya Rao</strong>
+                <span>Operations Lead</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <main class="content">
+          <section class="hero-banner">
+            <div class="hero-copy">
+              <p class="eyebrow">Stock Control</p>
+              <h1>Inventory</h1>
+              <p>
+                Keep inventory balanced across warehouses, surface low stock
+                warnings early, and understand distribution at a glance.
+              </p>
+            </div>
+            <div class="hero-actions">
+              <a class="primary-btn" href="#">Sync Stock</a>
+              <a class="ghost-btn" href="reports.html">Stock Report</a>
+            </div>
+          </section>
+
+          <section class="metrics-grid">
+            <article class="metric-card">
+              <span class="metric-label">Tracked SKUs</span>
+              <h3 class="metric-value">4,860</h3>
+              <p class="metric-meta">Fast-moving retail and enterprise catalog items.</p>
+              <span class="trend-chip">+82 new this quarter</span>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Low Stock Alerts</span>
+              <h3 class="metric-value">11</h3>
+              <p class="metric-meta">Products nearing reorder threshold this week.</p>
+              <span class="trend-chip">Priority replenishment</span>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Inventory Accuracy</span>
+              <h3 class="metric-value">98.1%</h3>
+              <p class="metric-meta">Cycle count reconciliation remains healthy overall.</p>
+              <span class="trend-chip">Above target</span>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Warehouse Coverage</span>
+              <h3 class="metric-value">08</h3>
+              <p class="metric-meta">All sites synced in the last 20 minutes.</p>
+              <span class="trend-chip">Realtime updates</span>
+            </article>
+          </section>
+
+          <section class="content-grid">
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h2 class="panel-title">Inventory Table</h2>
+                  <p class="panel-caption">Product stock by warehouse with live health state.</p>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Product Name</th>
+                      <th>Stock Level</th>
+                      <th>Warehouse</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Barcode Scanner Kit</td>
+                      <td>482</td>
+                      <td>North Hub</td>
+                      <td><span class="status-pill success">Normal</span></td>
+                    </tr>
+                    <tr>
+                      <td>Packing Tape Roll</td>
+                      <td>94</td>
+                      <td>Coastal Node</td>
+                      <td><span class="status-pill warning">Low</span></td>
+                    </tr>
+                    <tr>
+                      <td>Safety Gloves Set</td>
+                      <td>312</td>
+                      <td>Metro Fulfillment</td>
+                      <td><span class="status-pill success">Normal</span></td>
+                    </tr>
+                    <tr>
+                      <td>Thermal Label Pack</td>
+                      <td>68</td>
+                      <td>South Distribution</td>
+                      <td><span class="status-pill danger">Critical</span></td>
+                    </tr>
+                    <tr>
+                      <td>Scanner Battery Cell</td>
+                      <td>120</td>
+                      <td>Central Cross-Dock</td>
+                      <td><span class="status-pill warning">Low</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+
+            <article class="panel split-panel">
+              <div class="panel-header">
+                <div>
+                  <h2 class="panel-title">Alerts and Distribution</h2>
+                  <p class="panel-caption">Low stock watchlist and category stock spread.</p>
+                </div>
+              </div>
+              <div class="alert-list">
+                <div class="alert-item">
+                  <div>
+                    <strong>Thermal Label Pack is critical</strong>
+                    <p>Only 68 units remain in South Distribution. Recommended reorder today.</p>
+                  </div>
+                </div>
+                <div class="alert-item">
+                  <div>
+                    <strong>Packing Tape Roll is trending low</strong>
+                    <p>Demand spikes in the export lane increased weekly usage by 18%.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-chart">
+                <div class="bar-row">
+                  <span class="bar-label">Packaging</span>
+                  <div class="bar-track"><div class="bar-fill" style="width:72%"></div></div>
+                  <span class="bar-value">72%</span>
+                </div>
+                <div class="bar-row">
+                  <span class="bar-label">Electronics</span>
+                  <div class="bar-track"><div class="bar-fill" style="width:58%"></div></div>
+                  <span class="bar-value">58%</span>
+                </div>
+                <div class="bar-row">
+                  <span class="bar-label">Safety</span>
+                  <div class="bar-track"><div class="bar-fill" style="width:64%"></div></div>
+                  <span class="bar-value">64%</span>
+                </div>
+                <div class="bar-row">
+                  <span class="bar-label">Labels</span>
+                  <div class="bar-track"><div class="bar-fill" style="width:31%"></div></div>
+                  <span class="bar-value">31%</span>
+                </div>
+              </div>
+            </article>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

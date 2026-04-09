@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - 404 Solved</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="dashboard">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="index.html">
+          <div class="brand-mark">404</div>
+          <div class="brand-copy">
+            <span class="brand-overline">Project</span>
+            <h2>404 Solved</h2>
+          </div>
+        </a>
+
+        <nav class="nav-menu">
+          <a class="nav-link" data-nav="dashboard" href="dashboard.html"><span class="nav-icon">01</span><span>Dashboard</span></a>
+          <a class="nav-link" data-nav="warehouses" href="warehouses.html"><span class="nav-icon">02</span><span>Warehouses</span></a>
+          <a class="nav-link" data-nav="orders" href="orders.html"><span class="nav-icon">03</span><span>Orders</span></a>
+          <a class="nav-link" data-nav="shipments" href="shipments.html"><span class="nav-icon">04</span><span>Shipments</span></a>
+          <a class="nav-link" data-nav="inventory" href="inventory.html"><span class="nav-icon">05</span><span>Inventory</span></a>
+          <a class="nav-link" data-nav="customers" href="customers.html"><span class="nav-icon">06</span><span>Customers</span></a>
+          <a class="nav-link" data-nav="reports" href="reports.html"><span class="nav-icon">07</span><span>Reports</span></a>
+          <a class="nav-link" data-nav="settings" href="settings.html"><span class="nav-icon">08</span><span>Settings</span></a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <a class="ghost-btn" href="index.html">Back to Home</a>
+        </div>
+      </aside>
+
+      <div class="main-panel">
+        <header class="topbar">
+          <label class="search-box">
+            <span>&#128269;</span>
+            <input type="search" placeholder="Search orders, warehouses, and metrics" />
+          </label>
+          <div class="topbar-actions">
+            <button class="icon-button" type="button" aria-label="Notifications">
+              <span>&#128276;</span>
+              <span class="icon-badge">5</span>
+            </button>
+            <div class="profile-chip">
+              <div class="profile-avatar">&#128100;</div>
+              <div>
+                <strong>Priya Rao</strong>
+                <span>Operations Lead</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <main class="content">
+          <section class="hero-banner">
+            <div class="hero-copy">
+              <p class="eyebrow">Quick Overview</p>
+              <h1>Dashboard Overview</h1>
+              <p>
+                Monitor orders, shipments, warehouses, and stock performance
+                from one premium operations dashboard.
+              </p>
+            </div>
+            <div class="hero-actions">
+              <a class="primary-btn" href="orders.html">Review Orders</a>
+              <a class="ghost-btn" href="reports.html">Open Reports</a>
+            </div>
+          </section>
+
+          <section class="metrics-grid">
+            <article class="metric-card">
+              <span class="metric-label">Total Orders</span>
+              <h3 class="metric-value">12,480</h3>
+              <p class="metric-meta">Across retail, wholesale, and online channels.</p>
+              <span class="trend-chip">+14.2% this month</span>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Active Shipments</span>
+              <h3 class="metric-value">238</h3>
+              <p class="metric-meta">Live vehicles, vans, and courier partner dispatches.</p>
+              <span class="trend-chip">92% on schedule</span>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Warehouses Count</span>
+              <h3 class="metric-value">08</h3>
+              <p class="metric-meta">Primary hubs, cross-docks, and city fulfillment nodes.</p>
+              <span class="trend-chip">1 under audit</span>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Inventory Status</span>
+              <h3 class="metric-value">86%</h3>
+              <p class="metric-meta">Healthy stock posture across top moving product lines.</p>
+              <span class="trend-chip">11 items low stock</span>
+            </article>
+          </section>
+
+          <section class="content-grid">
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h2 class="panel-title">Orders Over Time</h2>
+                  <p class="panel-caption">Weekly order growth across the last eight checkpoints.</p>
+                </div>
+                <span class="filter-chip active">Last 8 Weeks</span>
+              </div>
+
+              <div class="line-chart">
+                <svg viewBox="0 0 560 250" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="ordersFill" x1="0" x2="0" y1="0" y2="1">
+                      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.36" />
+                      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                  <g stroke="rgba(148, 163, 184, 0.18)" stroke-width="1">
+                    <line x1="10" y1="30" x2="550" y2="30" />
+                    <line x1="10" y1="80" x2="550" y2="80" />
+                    <line x1="10" y1="130" x2="550" y2="130" />
+                    <line x1="10" y1="180" x2="550" y2="180" />
+                    <line x1="10" y1="230" x2="550" y2="230" />
+                  </g>
+                  <path d="M20 210 L90 184 L160 165 L230 175 L300 132 L370 118 L440 95 L510 62 L510 230 L20 230 Z" fill="url(#ordersFill)"></path>
+                  <polyline points="20,210 90,184 160,165 230,175 300,132 370,118 440,95 510,62" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></polyline>
+                  <g fill="#7dd3fc">
+                    <circle cx="20" cy="210" r="6"></circle>
+                    <circle cx="90" cy="184" r="6"></circle>
+                    <circle cx="160" cy="165" r="6"></circle>
+                    <circle cx="230" cy="175" r="6"></circle>
+                    <circle cx="300" cy="132" r="6"></circle>
+                    <circle cx="370" cy="118" r="6"></circle>
+                    <circle cx="440" cy="95" r="6"></circle>
+                    <circle cx="510" cy="62" r="6"></circle>
+                  </g>
+                </svg>
+                <div class="chart-axis">
+                  <span>Week 1</span>
+                  <span>Week 2</span>
+                  <span>Week 3</span>
+                  <span>Week 4</span>
+                  <span>Week 5</span>
+                  <span>Week 6</span>
+                  <span>Week 7</span>
+                  <span>Week 8</span>
+                </div>
+                <div class="chart-summary">
+                  <strong>Peak volume: 1,960 orders</strong>
+                  <span class="trend-chip">Average SLA 97.4%</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h2 class="panel-title">Shipment Status</h2>
+                  <p class="panel-caption">Current live shipment split by progress category.</p>
+                </div>
+              </div>
+
+              <div class="pie-wrap">
+                <div class="pie-chart">
+                  <div class="donut-center">
+                    238
+                    <span>live loads</span>
+                  </div>
+                </div>
+                <div class="legend-list">
+                  <div class="legend-item">
+                    <span class="legend-dot" style="background:#38bdf8"></span>
+                    <span>In transit - 48%</span>
+                  </div>
+                  <div class="legend-item">
+                    <span class="legend-dot" style="background:#f59e0b"></span>
+                    <span>Delayed - 30%</span>
+                  </div>
+                  <div class="legend-item">
+                    <span class="legend-dot" style="background:#22c55e"></span>
+                    <span>Delivered - 22%</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="content-grid equal">
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h2 class="panel-title">Recent Activity</h2>
+                  <p class="panel-caption">Latest system updates from the operations floor.</p>
+                </div>
+              </div>
+              <div class="activity-list">
+                <div class="activity-item">
+                  <span class="activity-marker" style="background:#38bdf8"></span>
+                  <div>
+                    <strong>Order ORD-10984 packed</strong>
+                    <p>North Hub team completed packing and pushed it to outbound staging 12 minutes ago.</p>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <span class="activity-marker" style="background:#22c55e"></span>
+                  <div>
+                    <strong>Shipment SHP-887 delivered</strong>
+                    <p>Final proof of delivery was captured and synced to the customer portal.</p>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <span class="activity-marker" style="background:#f59e0b"></span>
+                  <div>
+                    <strong>Capacity warning raised</strong>
+                    <p>Chennai fulfillment center crossed 87% pallet utilization on aisle group C.</p>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <span class="activity-marker" style="background:#ef4444"></span>
+                  <div>
+                    <strong>Low stock alert triggered</strong>
+                    <p>Wireless scanner batteries are approaching safety stock thresholds.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h2 class="panel-title">Latest Orders and Alerts</h2>
+                  <p class="panel-caption">High priority order feed and system watch list.</p>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Order ID</th>
+                      <th>Customer</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>ORD-10984</td>
+                      <td>Luna Retail</td>
+                      <td><span class="status-pill success">Ready</span></td>
+                    </tr>
+                    <tr>
+                      <td>ORD-10966</td>
+                      <td>Axis Trade</td>
+                      <td><span class="status-pill warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>ORD-10942</td>
+                      <td>Northline Mart</td>
+                      <td><span class="status-pill info">Packed</span></td>
+                    </tr>
+                    <tr>
+                      <td>ORD-10921</td>
+                      <td>Prime Essentials</td>
+                      <td><span class="status-pill danger">Escalated</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="alert-list">
+                <div class="alert-item">
+                  <div>
+                    <strong>3 shipments require route review</strong>
+                    <p>Traffic congestion is affecting ETA windows in the Bangalore cluster.</p>
+                  </div>
+                </div>
+                <div class="alert-item">
+                  <div>
+                    <strong>Cycle count scheduled tonight</strong>
+                    <p>South warehouse inventory audit starts at 10:30 PM.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

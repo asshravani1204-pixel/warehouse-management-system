@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings - 404 Solved</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="settings">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="index.html">
+          <div class="brand-mark">404</div>
+          <div class="brand-copy">
+            <span class="brand-overline">Project</span>
+            <h2>404 Solved</h2>
+          </div>
+        </a>
+        <nav class="nav-menu">
+          <a class="nav-link" data-nav="dashboard" href="dashboard.html"><span class="nav-icon">01</span><span>Dashboard</span></a>
+          <a class="nav-link" data-nav="warehouses" href="warehouses.html"><span class="nav-icon">02</span><span>Warehouses</span></a>
+          <a class="nav-link" data-nav="orders" href="orders.html"><span class="nav-icon">03</span><span>Orders</span></a>
+          <a class="nav-link" data-nav="shipments" href="shipments.html"><span class="nav-icon">04</span><span>Shipments</span></a>
+          <a class="nav-link" data-nav="inventory" href="inventory.html"><span class="nav-icon">05</span><span>Inventory</span></a>
+          <a class="nav-link" data-nav="customers" href="customers.html"><span class="nav-icon">06</span><span>Customers</span></a>
+          <a class="nav-link" data-nav="reports" href="reports.html"><span class="nav-icon">07</span><span>Reports</span></a>
+          <a class="nav-link" data-nav="settings" href="settings.html"><span class="nav-icon">08</span><span>Settings</span></a>
+        </nav>
+        <div class="sidebar-footer">
+          <a class="ghost-btn" href="index.html">Back to Home</a>
+        </div>
+      </aside>
+
+      <div class="main-panel">
+        <header class="topbar">
+          <label class="search-box">
+            <span>&#128269;</span>
+            <input type="search" placeholder="Search settings and system preferences" />
+          </label>
+          <div class="topbar-actions">
+            <button class="icon-button" type="button" aria-label="Notifications">
+              <span>&#128276;</span>
+              <span class="icon-badge">2</span>
+            </button>
+            <div class="profile-chip">
+              <div class="profile-avatar">&#128100;</div>
+              <div>
+                <strong>Priya Rao</strong>
+                <span>Operations Lead</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <main class="content">
+          <section class="hero-banner">
+            <div class="hero-copy">
+              <p class="eyebrow">System Settings</p>
+              <h1>Settings</h1>
+              <p>
+                Update your profile, choose notification behavior, and switch
+                between dark and light dashboard views.
+              </p>
+            </div>
+            <div class="hero-actions">
+              <a class="primary-btn" href="#">Save Preferences</a>
+              <a class="ghost-btn" href="reports.html">Export Summary</a>
+            </div>
+          </section>
+
+          <section class="form-grid">
+            <article class="form-card">
+              <h3>Profile Settings</h3>
+              <p class="helper-text">Manage the main profile used across the operations dashboard.</p>
+              <div class="field-group">
+                <label for="name">Full Name</label>
+                <input id="name" type="text" value="Priya Rao" />
+              </div>
+              <div class="field-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" value="priya.rao@flowstack.com" />
+              </div>
+              <div class="field-group">
+                <label for="role">Role</label>
+                <select id="role">
+                  <option>Operations Lead</option>
+                  <option>Warehouse Manager</option>
+                  <option>Dispatch Supervisor</option>
+                </select>
+              </div>
+              <div class="field-group">
+                <label for="bio">Notes</label>
+                <textarea id="bio">Coordinate daily warehouse activity, monitor route exceptions, and keep outbound SLA performance on target.</textarea>
+              </div>
+            </article>
+
+            <article class="form-card">
+              <h3>Notification Settings</h3>
+              <p class="helper-text">Choose which operational events should surface instantly.</p>
+              <div class="toggle-row">
+                <div>
+                  <strong>Shipment delay alerts</strong>
+                  <span>Receive updates when ETA windows shift.</span>
+                </div>
+                <label class="toggle-switch">
+                  <input type="checkbox" checked />
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+              <div class="toggle-row">
+                <div>
+                  <strong>Low stock warnings</strong>
+                  <span>Show inventory alerts when products drop below threshold.</span>
+                </div>
+                <label class="toggle-switch">
+                  <input type="checkbox" checked />
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+              <div class="toggle-row">
+                <div>
+                  <strong>Order completion digest</strong>
+                  <span>Group same-day completion notices into a summary.</span>
+                </div>
+                <label class="toggle-switch">
+                  <input type="checkbox" />
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+              <div class="theme-card">
+                <div>
+                  <strong>Dark / Light toggle</strong>
+                  <p class="helper-text">Switch the interface theme across all connected pages.</p>
+                </div>
+                <label class="toggle-switch">
+                  <input data-theme-toggle type="checkbox" />
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </article>
+          </section>
+
+          <section class="content-grid equal">
+            <article class="form-card">
+              <h3>System Preferences</h3>
+              <p class="helper-text">Simple preferences for regional operations and dashboard behavior.</p>
+              <div class="field-group">
+                <label for="timezone">Timezone</label>
+                <select id="timezone">
+                  <option>Asia/Calcutta</option>
+                  <option>UTC</option>
+                  <option>US/Eastern</option>
+                </select>
+              </div>
+              <div class="field-group">
+                <label for="language">Language</label>
+                <select id="language">
+                  <option>English</option>
+                  <option>Hindi</option>
+                  <option>Spanish</option>
+                </select>
+              </div>
+              <div class="field-group">
+                <label for="landing">Default Landing Page</label>
+                <select id="landing">
+                  <option>Dashboard</option>
+                  <option>Orders</option>
+                  <option>Inventory</option>
+                </select>
+              </div>
+            </article>
+
+            <article class="form-card">
+              <h3>System Health</h3>
+              <p class="helper-text">Quick operational preference summary for the dashboard shell.</p>
+              <div class="activity-list">
+                <div class="activity-item">
+                  <span class="activity-marker" style="background:#22c55e"></span>
+                  <div>
+                    <strong>Realtime sync active</strong>
+                    <p>Warehouse and order widgets are configured for frequent refresh cycles.</p>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <span class="activity-marker" style="background:#38bdf8"></span>
+                  <div>
+                    <strong>Backup window scheduled</strong>
+                    <p>System backups run nightly after dispatch closes at 11:45 PM.</p>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <span class="activity-marker" style="background:#f59e0b"></span>
+                  <div>
+                    <strong>2 preference updates pending save</strong>
+                    <p>Theme and notification changes will apply instantly after confirmation.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

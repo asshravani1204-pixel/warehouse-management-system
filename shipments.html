@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shipments - 404 Solved</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="shipments">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="index.html">
+          <div class="brand-mark">404</div>
+          <div class="brand-copy">
+            <span class="brand-overline">Project</span>
+            <h2>404 Solved</h2>
+          </div>
+        </a>
+        <nav class="nav-menu">
+          <a class="nav-link" data-nav="dashboard" href="dashboard.html"><span class="nav-icon">01</span><span>Dashboard</span></a>
+          <a class="nav-link" data-nav="warehouses" href="warehouses.html"><span class="nav-icon">02</span><span>Warehouses</span></a>
+          <a class="nav-link" data-nav="orders" href="orders.html"><span class="nav-icon">03</span><span>Orders</span></a>
+          <a class="nav-link" data-nav="shipments" href="shipments.html"><span class="nav-icon">04</span><span>Shipments</span></a>
+          <a class="nav-link" data-nav="inventory" href="inventory.html"><span class="nav-icon">05</span><span>Inventory</span></a>
+          <a class="nav-link" data-nav="customers" href="customers.html"><span class="nav-icon">06</span><span>Customers</span></a>
+          <a class="nav-link" data-nav="reports" href="reports.html"><span class="nav-icon">07</span><span>Reports</span></a>
+          <a class="nav-link" data-nav="settings" href="settings.html"><span class="nav-icon">08</span><span>Settings</span></a>
+        </nav>
+        <div class="sidebar-footer">
+          <a class="ghost-btn" href="index.html">Back to Home</a>
+        </div>
+      </aside>
+
+      <div class="main-panel">
+        <header class="topbar">
+          <label class="search-box">
+            <span>&#128269;</span>
+            <input type="search" placeholder="Search shipment ID or current location" />
+          </label>
+          <div class="topbar-actions">
+            <button class="icon-button" type="button" aria-label="Notifications">
+              <span>&#128276;</span>
+              <span class="icon-badge">4</span>
+            </button>
+            <div class="profile-chip">
+              <div class="profile-avatar">&#128100;</div>
+              <div>
+                <strong>Priya Rao</strong>
+                <span>Operations Lead</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <main class="content">
+          <section class="hero-banner">
+            <div class="hero-copy">
+              <p class="eyebrow">Transit Tracking</p>
+              <h1>Shipments</h1>
+              <p>
+                Follow live loads, ETA windows, and route progress with a
+                premium tracking view built for daily dispatch operations.
+              </p>
+            </div>
+            <div class="hero-actions">
+              <a class="primary-btn" href="#">Dispatch Shipment</a>
+              <a class="ghost-btn" href="reports.html">Performance Report</a>
+            </div>
+          </section>
+
+          <section class="status-grid">
+            <article class="status-card">
+              <span class="metric-label">Shipment ID</span>
+              <h3 class="metric-value">SHP-887</h3>
+              <p class="metric-meta">Current location: Pune ring road corridor</p>
+              <span class="status-pill success">ETA 2h 10m</span>
+            </article>
+            <article class="status-card">
+              <span class="metric-label">Shipment ID</span>
+              <h3 class="metric-value">SHP-902</h3>
+              <p class="metric-meta">Current location: Chennai port connector</p>
+              <span class="status-pill warning">Delay 48 min</span>
+            </article>
+            <article class="status-card">
+              <span class="metric-label">Shipment ID</span>
+              <h3 class="metric-value">SHP-915</h3>
+              <p class="metric-meta">Current location: Delhi outer freight lane</p>
+              <span class="status-pill info">Checkpoint cleared</span>
+            </article>
+          </section>
+
+          <section class="content-grid">
+            <article class="panel">
+              <div class="panel-header">
+                <div>
+                  <h2 class="panel-title">Tracking Progress</h2>
+                  <p class="panel-caption">Milestone completion for active outbound shipments.</p>
+                </div>
+              </div>
+              <div class="route-list">
+                <div class="progress-row">
+                  <div class="progress-meta">
+                    <strong>SHP-887 - Mumbai to Pune</strong>
+                    <span class="status-pill success">78%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-fill" style="width:78%"></div></div>
+                </div>
+                <div class="progress-row">
+                  <div class="progress-meta">
+                    <strong>SHP-902 - Chennai to Bangalore</strong>
+                    <span class="status-pill warning">53%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-fill" style="width:53%"></div></div>
+                </div>
+                <div class="progress-row">
+                  <div class="progress-meta">
+                    <strong>SHP-915 - Delhi to Jaipur</strong>
+                    <span class="status-pill info">61%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-fill" style="width:61%"></div></div>
+                </div>
+                <div class="progress-row">
+                  <div class="progress-meta">
+                    <strong>SHP-921 - Hyderabad to Vizag</strong>
+                    <span class="status-pill neutral">34%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-fill" style="width:34%"></div></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel split-panel">
+              <div class="panel-header">
+                <div>
+                  <h2 class="panel-title">Route Map</h2>
+                  <p class="panel-caption">Stylized live corridor view for high-priority deliveries.</p>
+                </div>
+              </div>
+              <div class="map-card">
+                <div class="map-grid"></div>
+                <svg class="map-path" viewBox="0 0 400 320" aria-hidden="true">
+                  <path d="M45 245 C120 220, 150 185, 220 165 S300 125, 355 80" fill="none" stroke="rgba(56, 189, 248, 0.75)" stroke-width="5" stroke-linecap="round"></path>
+                  <path d="M220 165 C250 185, 278 218, 315 248" fill="none" stroke="rgba(245, 158, 11, 0.55)" stroke-width="4" stroke-linecap="round" stroke-dasharray="12 10"></path>
+                </svg>
+                <div class="route-node" style="left: 9%; top: 74%"></div>
+                <div class="map-label" style="left: 6%; top: 80%">Mumbai</div>
+                <div class="route-node" style="left: 53%; top: 48%"></div>
+                <div class="map-label" style="left: 48%; top: 54%">Pune checkpoint</div>
+                <div class="route-node" style="left: 83%; top: 21%"></div>
+                <div class="map-label" style="left: 72%; top: 10%">Arrival ETA</div>
+              </div>
+            </article>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
